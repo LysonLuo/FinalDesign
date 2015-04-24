@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/margin_normal"
+    android:paddingLeft="@dimen/margin_normal">
+
+    <TextView
+        android:id="@+id/textview_user_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="小区名称"
+        android:paddingRight="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_normal"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <ImageView
+        android:id="@+id/imageview_user_arrow"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textview_user_item_name"
+        android:layout_alignBottom="@+id/textview_user_item_name"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>

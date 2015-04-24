@@ -1,4 +1,4 @@
-package me.lyson.design.ui;
+package me.lyson.design.ui.common;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -14,11 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import me.lyson.design.R;
-import me.lyson.design.ui.common.NoDataFragment;
-import me.lyson.design.ui.common.ProgressFragment;
-import me.lyson.design.ui.common.RetryFragment;
-import me.lyson.design.ui.common.ToolbarSetter;
-import me.lyson.design.ui.utils.MagicLog;
+import me.lyson.design.utils.MagicLog;
 
 /**
  * Created by Lyson on 15/3/27.
@@ -58,12 +54,13 @@ public class BaseActivity extends ActionBarActivity {
                 ((LinearLayout) topLevelLayout).setOrientation(LinearLayout.VERTICAL);
             } else if (toolbarPosition == TOOLBAR_POSITION_COVER) {
                 topLevelLayout = new FrameLayout(this);
-                topLevelLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+                topLevelLayout.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             }
             Toolbar toolbar = (Toolbar) LayoutInflater.from(this).inflate(R.layout.widget_toolbar, null);
             Toolbar.LayoutParams layoutParams = new Toolbar.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     getResources().getDimensionPixelSize(R.dimen.abc_action_bar_default_height_material));
             toolbar.setLayoutParams(layoutParams);
+            //This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead
             setSupportActionBar(toolbar);
             ToolbarSetter.setupDefaultToolbar(this, toolbar);
             mToolbar = toolbar;
@@ -121,7 +118,13 @@ public class BaseActivity extends ActionBarActivity {
     public boolean isShowToolbar() {
         return isShowToolbar;
     }
-
+    /**
+     * 在setContentView前调用
+     * @param
+     */
+    public void setToolbarPosition(int toolbarPosition) {
+        this.toolbarPosition = toolbarPosition;
+    }
     /**
      * 显示圆形进度条的Fragment，区别于ProgressDialog，覆盖在整个Activity中
      */

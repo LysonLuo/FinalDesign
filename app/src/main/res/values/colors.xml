@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="toolbar_bg">#314154</color>
+    <color name="tab_indicator_color">#538DAF</color><!--滚动条背景-->
+    <color name="statusbar_bg">#314154</color><!--状态栏背景-->
+    <color name="windowbackground_color">@android:color/white</color> <!-- 主视图背景色 -->
+    <color name="green">#81D506</color>
+    <color name="light_gray">#ff9e9e9e</color>
+
+    <color name="text_color_white_alpha1">#70FFFFFF</color>
+    <color name="text_color_white_alpha2">#50FFFFFF</color>
+</resources>

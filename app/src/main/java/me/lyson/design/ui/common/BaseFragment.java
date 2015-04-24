@@ -6,8 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.Toast;
 
-import me.lyson.design.ui.BaseActivity;
-import me.lyson.design.ui.utils.MagicLog;
+import me.lyson.design.utils.MagicLog;
 
 /**
  * Created by Lyson on 15/3/27.

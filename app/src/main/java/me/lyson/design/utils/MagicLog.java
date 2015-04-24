@@ -1,4 +1,4 @@
-package me.lyson.design.ui.utils;
+package me.lyson.design.utils;
 
 import android.util.Log;
 

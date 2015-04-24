@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageview_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="这是一个测试图片"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@android:color/white"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp" />
+
+        <me.lyson.design.ui.view.FlatButton
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="请点击"
+            android:textColor="@android:color/white"
+            app:buttonColor="@color/green"
+            app:cornerRadius="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="测试"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@android:color/white"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="测试"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="测试"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

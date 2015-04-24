@@ -5,7 +5,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import me.lyson.design.R;
-import me.lyson.design.ui.BaseActivity;
 
 /**
  * Created by Lyson on 15/3/27.

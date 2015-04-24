@@ -1,0 +1,111 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin_normal"
+    android:layout_marginLeft="@dimen/margin_normal"
+    android:layout_marginRight="@dimen/margin_normal"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="@dimen/margin_very_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/imageview_show_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textview_show_name"
+            android:layout_width="wrap_content"
+            android:maxWidth="200dp"
+            android:minWidth="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Linkin Park 2015 global concert"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:padding="@dimen/margin_small"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/textview_show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_show_name"
+            android:text="2015/01/26"
+            android:layout_marginLeft="6dp"
+            android:padding="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/textview_show_support_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginStart="@dimen/margin_small"
+            android:text="1231"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/margin_small"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/textview_show_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="BOOKING"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:paddingLeft="@dimen/margin_normal"
+            android:paddingRight="@dimen/margin_normal"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_small"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/textview_show_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="广州."
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/textview_show_stadium"
+            android:paddingBottom="@dimen/margin_small"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/textview_show_stadium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_small"
+            android:text="天河体育中心"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="@dimen/margin_small"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

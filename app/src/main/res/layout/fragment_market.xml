@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout_market"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollview_market"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_market_banner"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@android:color/darker_gray">
+
+            </android.support.v4.view.ViewPager>
+
+            <me.lyson.design.ui.view.ExpandableHeightGridView
+                android:id="@+id/gridview_market"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="@dimen/margin_normal"
+                android:verticalSpacing="@dimen/margin_normal"
+                android:padding="@dimen/margin_normal"
+                android:clipToPadding="false"
+                android:numColumns="3"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>
+
